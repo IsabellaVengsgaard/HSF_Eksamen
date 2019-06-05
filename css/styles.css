@@ -1,0 +1,1065 @@
+/* Globalstyling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-image: url(../images/mobile-bg.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+
+h2 {
+	font-family: 'Montaga', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+h3,
+h4,
+h5 {
+    font-family: 'Montaga', serif;
+    font-size: 20px;
+}
+
+
+/* G.S. - forside styles */
+
+.hsf-title {
+	font-family: 'Euphoria Script', sans-serif;
+	color: white;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	margin-top: 50%;
+}
+
+.navbar {
+    display: none;
+}
+
+.storforside {
+    display: none;
+}
+
+#forside img {
+    width: 100%;
+}
+
+.ornament-forside {
+	position: absolute;
+	margin-top: -23%;
+}
+
+.ornament-desktop-forside {
+	display: none;
+}
+
+
+/* G.S. - navigation styles */
+
+.forsideImage {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.menuMobildiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    margin-top: 4%;
+}
+
+.onTop,
+.menuMobildiv {
+    margin-right: 10%;
+}
+
+.logoFlex {
+    margin-left: 5%;
+}
+
+.navContainer img {
+    width: 70px;
+}
+
+.forsideBillede {
+    width: 100%;
+}
+
+.button-1,
+.button-2 {
+	display: none;
+}
+
+
+.menuButton {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-color: rgb(116, 1, 42, 0.8);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Montaga', serif;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* G.S. - forsiden styles */
+
+/* G.S. - om os styles */
+
+.hovedSection {
+    display: flex;
+    justify-content: center;
+}
+
+.hovedSection img {
+    width: 100px;
+}
+
+#omos h2 {
+    color: black;
+    text-align: center;
+}
+.omos-p {
+	line-height: 1.6;
+	text-align: center;
+	margin: 0 50px 20px 50px;
+}
+
+#video {
+    width: 100%;
+}
+
+/* G.S. - menu styles */
+
+.ornamentSection {
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: -50px;
+	margin-top: -30px;
+}
+
+.ornamentSection img {
+    width: 70px;
+}
+
+.ornamentSection h2 {
+    align-self: center;
+    font-size: 30px !important;
+	
+}
+
+.ornamentSectionFlip {
+    display: flex;
+    transform: scaleY(-1);
+    justify-content: space-between;
+}
+
+.ornamentSectionFlip img {
+    width: 70px;
+}
+
+.ornamentBlomst {
+    width: 50px;
+	
+}
+
+button.accordion {
+    color: white;
+    width: 50%;
+    background-color: rgb(116, 1, 42);
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    display: block;
+    margin: auto;
+}
+
+button.accordion i {
+    font-size: 14px;
+    float: right;
+}
+
+button.accordion:hover {
+    background-color: rgb(76, 0, 26);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordion-content img {
+    width: 100%;
+}
+
+#menusiden h3 {
+    color: black;
+    text-align: center;
+}
+
+.accordion-content {
+    margin-top: 30px;
+}
+
+#menusiden {
+    display: block;
+}
+
+#menusidenDesktop {
+    display: none;
+}
+
+.buttonUpMenu {
+    display: block;
+    background-color: rgb(116, 1, 42);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* G.S. - booking styles */
+
+#book-img {
+    display: none;
+}
+
+#booking {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#booking p {
+    font-family: montaga;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {}
+
+input[type=send] {
+
+    background-color: rgb(116, 1, 42);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+input[type=send]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.booking-knap {
+	display: block;
+	margin: auto;
+	background-color: #74012a;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 16px 30px;;
+	cursor: pointer;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+}
+
+/* Headless CMS - mobil */
+
+    .grid-container {
+        display: grid;
+        padding: 10px;
+
+}
+      .wp-image-30 {
+        width: 100%;
+        }
+
+     .wp-image-46 {
+        width: 100%;
+
+        }
+
+    #grid-left {
+        text-align: center;
+    }
+
+.grid-container>article{
+ text-align: center;
+}
+
+.grid-container>article p{
+ text-align: center;
+ padding-left: 10%;
+ padding-right: 10%;
+    }
+.grid-container>h3 {
+  text-align: center;
+}
+
+/* G.S. - anmeldser, nyheder, logoer styles */
+
+/* Mobil Anmeldelser */
+
+.slideshow-container {
+    position: relative;
+
+}
+
+
+.mySlides {
+    display: none;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #3f3838;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+.dot-container {
+    text-align: center;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #3f3838;
+}
+
+
+q {
+    font-style: italic;
+
+}
+
+
+.author {
+    color: #3f3838;
+    font-weight: bold;
+}
+
+.anmeldelser-billeder {
+    min-width: 8%;
+
+}
+
+/* G.S - Samarbejdspartner*/
+
+.partner-bg {
+	display: none;
+}
+
+.flex-samarbejdspartner {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+
+}
+
+.partner {
+    width: 15%;
+    height: 2%;
+    margin: 3% 5% 0 0;
+}
+
+.partner-2 {
+    width: 35%;
+    height: 2%;
+    margin: 4% 2% 0 0;
+}
+
+
+/* G.S. - Kontakt styles */
+
+/*Footer*/
+
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(53, 43, 43);
+    margin-top: 60px;
+    text-align: center;
+}
+
+#kontakt {
+    font-size: 15px;
+    color: white;
+}
+
+#kontakt p {
+    font-size: 16px;
+    color: white;
+}
+
+footer-headline {
+    color: white;
+}
+
+#kontakt div {
+    padding: 10px;
+}
+
+#so_melogo {
+    color: white;
+}
+
+#so-melogo i {
+    margin: 5%;
+}
+
+
+#footerlogo {
+    display: none;
+}
+
+i {
+    color: white;
+}
+
+
+a {color: white;}
+
+
+/* Mobile */
+
+@media (min-width:400px) {}
+
+
+
+
+/* Tablet */
+
+@media (min-width:700px) {
+
+    /*styles til menuside - tablet*/
+    .accordion-content img {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    /*menu- burger så den stadig er henover flaget*/
+    .menuMobildiv {
+        margin-top: 2%;
+    }
+
+    img.logoFlex {
+        width: 300px !important;
+        margin-left: -10%;
+    }
+    /* footer - tablet */
+
+
+    #kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #footerlogo {
+        display: block;
+        margin: 40px 0 0 0;
+
+    }
+
+
+
+    /*menukort styles til tablet*/
+    .accordion-content img {
+        width: 50%;
+    }
+
+
+    /*scroll up button - menu kort*/
+    .buttonUpMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(116, 1, 42);
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    /*styles til booking - tablet*/
+
+        #booking {
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #book-img {
+        background-size: contain;
+        display: flex;
+        width: 70%;
+		padding-left: 10%;
+        
+    }
+
+
+/* Desktop */
+
+@media (min-width:1020px) {
+
+    body {
+        background-image: url(/images/bg-web-stor.jpg);
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+
+    
+	
+	
+	.hsf-title {
+		font-size: 40px;
+		margin-left: 32%;
+		margin-top: 15%;
+	}
+
+    .navbar {
+ 		display: flex;
+		justify-content: space-between;
+		width: 90%;
+        float: left;
+        overflow: hidden;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        margin-top: 1%;
+    }
+
+    .navbar ul li {
+        padding-top: 2%;
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+    }
+    .navbar ul li a {
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        padding: 0.5em 1em;
+		font-size: 20px;
+        text-decoration: none;
+		
+    }
+	img.logoFlex {
+        display: none;
+    }
+	
+    .logonav {
+        width: 20%;
+        float: left;
+        position: relative;
+        z-index: 1;
+        top: 0;
+    }
+
+    .forsideImage {
+        display: none;
+    }
+
+    .storforside {
+		display:block;
+		width: 100%;
+		height: 100vh;
+	
+    }
+	
+	
+	.forside-buttons {
+		position: absolute;
+		margin-top: -20%;
+		margin-left: 39%;
+	}
+	
+	.button-1 {
+		display: inline-block;
+		background-color: #74012a;
+		border: none;
+		border-radius: 10px;
+		margin-right: 40px;
+		color: white;
+		padding: 16px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		-webkit-transition-duration: 0.4s;
+		cursor: pointer;
+	}
+
+	.button-1:hover {
+		text-decoration: underline;
+	}
+
+
+	.button-2 {
+		display: inline-block;
+		background-color: #74012a;
+		border: none;
+		border-radius: 10px;
+		margin-right: 40px;
+		color: white;
+		padding: 16px 55px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		-webkit-transition-duration: 0.4s;
+		cursor: pointer;
+	}
+
+	.button-2:hover {
+		text-decoration: underline;
+		
+	}
+	
+	.onTop {
+        display: none;
+    }
+	
+	.ornament-forside {
+	display: none;
+}
+.ornament-desktop-forside {
+	display: block;
+	width: 30%;
+	left: 35%;
+	position: absolute;
+	margin-top: -7%;
+}
+	
+	
+	
+
+    /*Om os - desktop*/
+    #omsalonen {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+    }
+	
+
+
+    .video-mask {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+
+    #video {
+        display: block;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 650px;
+        padding: 10px;
+        border-radius: 45px;
+        overflow: hidden;
+    }
+
+
+    /*styles til menu - desktop*/
+    #menusiden {
+        display: none;
+    }
+
+    #menusidenDesktop {
+        display: block;
+		
+    }
+
+    #menusidenDesktop h3 {
+        color: black;
+        text-align: center;
+    }
+
+    .accordion-content img {
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ornamentSection img {
+        width: 75px !important;
+    }
+
+    .ornamentSectionFlip img {
+        width: 75px !important;
+    }
+
+    .accordion-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menuContainer {
+        flex-direction: row;
+    }
+
+    .morgenMadImg {
+        width: 40%;
+		border-radius: 45px;
+    }
+
+    .menuFlexContainer {
+        display: flex;
+        align-items: flex-start;
+		margin-left: 160px;
+		margin-top: 30px;
+    }
+
+    .menuContainer2 {
+        display: flex;
+        align-items: baseline;
+
+    }
+
+
+    /*knap til at fører en tilbage til toppen af menu kortet*/
+    .buttonUpMenu {
+        display: block;
+        background-color: rgb(116, 1, 42);
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+
+
+    /* footer - desktop */
+
+
+
+    /*styles til booking - desktop*/
+
+    #booking {
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-left: 15%;
+		
+    }
+
+    #book-img {
+        padding-left: 5%;
+		margin-right: 80px;
+    }
+	
+	.book-tekst {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 37%;
+	}
+	
+	.book-ornament {
+		width: 10%;
+		display: block;
+		margin: auto;
+		margin-top: 110px;
+		margin-bottom: 20px;
+	}
+	
+	.book-p {
+		width: 74%;
+		display: block;
+		margin: auto;
+		font-size: 25px;
+		line-height: 1.6;
+		text-align: center;
+	}
+	
+
+
+    .ornamentSection,
+    .ornamentSectionFlip {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    button.accordion {
+        width: 45%;
+    }
+
+	/* Headless CMS - desktop */
+
+    .grid-container {
+        display: grid;
+        padding: 10px;
+
+}
+      .wp-image-30 {
+        width: 50%;
+        }
+
+     .wp-image-46 {
+        width: 50%;
+
+        }
+
+    #grid-left {
+        text-align: center;
+    }
+
+.grid-container>article{
+ text-align: center;
+}
+
+.grid-container>article p{
+ text-align: center;
+    }
+.grid-container>h3 {
+  text-align: center;
+}
+	
+	
+	
+	
+    /* anmeldelser - desktop */
+    .mySlides {
+    	padding: 10px 300px;
+
+    }
+
+    .next {
+    	margin-right: 10%;
+    }
+
+    .prev {
+    	margin-left: 10%;
+    }
+	
+	.feedback-title {
+		font-size: 17px;
+	}
+
+    q {
+    	font-style: italic;
+
+    }
+
+
+    .author {
+        color: #3f3838;
+        font-weight: bold;
+    }
+
+    .anmeldelser-billeder {
+        min-width: 8%;
+    }
+
+    /* samarbejdspartner - desktop */
+
+	.partner-content {
+		padding-top: 25px;
+	}
+	
+	#partner-h2 {
+		margin-top: 20px;
+	}
+	
+	.partner-bg {
+        display: block;
+		position: absolute;
+		z-index: -20;
+		width: 100%;
+		height: 26vh;
+		
+	}
+	
+.flex-samarbejdspartner {
+    padding: 0 10%;
+    flex-direction: row;
+}
+
+.partner {
+    width: 4%;
+    margin-top: 0;
+}
+
+.partner-2 {
+    width: 15%;
+    margin-top: 0;
+
+
+}
+
+
+    /* footer - desktop */
+    #kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #footerlogo {
+        display: block;
+        margin: 40px 0 0 0;
+    }
+	
+	#kontakt p {
+    font-size: 14px;
+}
+	
+	
+	
+}
